@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<title>Introduction to Programming - JN Morris Notes</title>
+</head>
+<body>
+<h1 class="intro-h1">Introduction to Web Programming</h1>
+<div class="intro">
+	<p>In this Nano Degree, we are learning the basics of web programming,
+		including HTML/CSS and Python. The class will also teach you how to
+		think like a programmer by utilizing specific critical thinking and
+		problem-solving skills&mdash;including techonological empathy (e.g.,
+		computers are stupid and will only do what you tell them to do).</p>
+</div>
+
+<h1>Lesson 1: The Basics of the Web</h1>
+<div class="lesson">
+	<div class="concept">
+		<h2>The Web</h2>
+		<p>The web is essentially a collection of documents. Most of these
+			documents are HTML documents (but there are also PDFs, image 
+			files, etc). A user uses a <strong>web browser</strong> on his
+			or her computer to view the Internet. In order to do this, the
+			user&rsquo;s computer must send a request with <strong>HTTP</strong>
+			(hypertext transfer protocol) to <strong>servers</strong> which
+			store the HTML pages. The Internet is just a collection of many 
+			servers connected together, interpreted through a web browser.</p>
+			<p>HTML stands for <strong>HyperText Markup Language</strong>.
+				An HTML document has three basic components:</p>
+			<ul>
+				<li><strong>text</strong>, or the main content of a page;</li>
+				<li><strong>markup</strong>, the code telling the computer 
+					what a page should look like; and</li>
+				<li><strong>links to other pages</strong>.</li>
+			</ul>
+	</div>
+
+	<div class="concept">
+		<h2>HTML Markup</h2>
+		<p>The basic unit of HTML markup is the <strong>tag</strong>. A tag
+			is always surrounded by angle brackets
+			(<span class="code">&lt; &gt;</span>). Most tags have an opening
+			tag and a closing tag. A closing tag has a forward slash after the
+			first bracket (<span class="code">&lt;/&nbsp;&gt;</span>). Everything between tags is known as an 
+			<strong>element</strong>.</p>
+		<p>Some tags have what is known as an <em>attribute</em>. An
+			attribute is a property of an HTML element. For example, the
+			<strong>anchor</strong> tag, used to create links (like 
+			<a href="http://www.google.com">this one to Google</a>), has an
+			attribute known as <em>href</em>. So, a link would look like this:</p>
+			<div class="code">&lt;a href="url"&gt;link text&lt;/a&gt;</div>
+		<p>Tags can have more than one attribute; for instance, the
+			<span class="code">&lt;img&gt;</span> tag, used for linking to and
+			displaying images, usually has two attributes, <em>src</em>
+			(for <em>source</em>) and <em>alt</em> (for <em>alternate</em>).
+			The <strong>src</strong> tag is used to link to the url of the
+			image, while <strong>alt</strong> displays text if a link to
+			the image is broken or a page is being viewed by a blind person.</p>
+		<p>The <span class="code">&lt;img&gt;</span> tag is a type known as a void
+			tag. This simply means that there is no content (text) within
+			the tag. Void tags do not need closing tags (and can be
+			&ldquo;self-closed&rdquo; with a forward slash immediately
+			before the final angle bracket). Another void tag is used for
+			line breaks, <span class="code">&lt;br/&gt;</span>.</p>
+	</div>
+
+	<div class="concept">
+		<h2>Inline Tags vs. Block Tags</h2>
+		<p><strong>Inline tags</strong> are tags which occur within a text.
+			Many common tags are inline tags, such as:</p>
+		<ul>
+			<li>line break: <span class="code">&lt;br/&gt;</span></li>
+			<li>image: <span class="code">&lt;img&gt;</span></li>
+			<li><em>italics</em>: <span class="code">&lt;em&gt;</span></li>
+			<li><strong>bold</strong>: <span class="code">&lt;b&gt;</span> or 
+				<span class="code">&lt;strong&gt;</span>.</li>
+			</ul>
+		<p>On the other hand, a <strong>block tag</strong>, is one that
+			sections off an entire section of text, creating an invisible
+			&ldquo;box&rdquo; around an element. The most common block tag
+			is probably the paragraph, or <span class="code">&lt;p&gt;</span>.</p>
+		<h3>Span and Div</h3>
+		<p>The difference between inline and block tags can be illustrated
+			by comparing the <span class="code">&lt;span&gt;</span> and 
+			<span class="code">&lt;div&gt;</span> tags. Both tags are 
+			<strong>container</strong> tags&mdash;they surround an element
+			in a certain style. However, <span class="code">&lt;span&gt;</span>
+			is an inline tag, existing within a line or block, while
+			<span class="code">&lt;div&gt;</span> is a block tag, creating a 
+			&ldquo;box&rdquo; or block around an element.</p>
+	</div>
+
+	<div class="concept">
+		<h2>Anatomy of a Page</h2>
+		<p>There are many tags, but all HTML pages have the following parts
+			which make up the skeleton or backbone of a page:</p>
+		<ul>
+			<li><span class="code">&lt;!DOCTYPE HTML&gt;</span> : tells you what
+				the document type is</li>
+			<li><span class="code">&lt;html&gt;</span> : starts and ends each
+				HTML document</li>
+			<li><span class="code">&lt;head&gt;</span> : This tag contains the
+				<em>metadata</em> of a page. This can include the title
+				(enclosed by <span class="code">&lt;title&gt;</span> tags), links
+				to any referenced CSS or JavaScript pages, and the like.</li>
+			<li><span class="code">&lt;body&gt;</span> : These tags enclose the 
+				main content of the page&mdash;all the text, images, and
+				links within a page.</li>
+		</ul>
+	</div>
+</div>
+
+<h1>Lesson 2: Creating Structured Documents with HTML</h1>
+<div class="lesson">
+	<div class="concept">
+		<h2>Languages of the Web</h2>
+		<p>When you write a webpage, you are using two basic languages, HTML and
+			CSS:</p>
+		<ul>
+			<li><strong>HTML</strong> provides the <em>structure</em> of a
+				page&mdash;what the headings, paragraphs, links, and images
+				are.</li>
+			<li><strong>CSS</strong>, or Cascading Style Sheets, tells the
+				browser how a page is styled: the font size and color of each
+				element, the position of elements, borders, and so on.</li>
+		</ul>
+	</div>
+
+	<div class="concept">
+		<h2>The Structure of an HTML Page</h2>
+		<p>An HTML page can be conceptualized with a tree model, with elements
+			branching out within or beneath other elements. For example, the
+			paragraph you are reading right now is nested as follows:</p>
+		<div class="indent"><strong>body</strong> &rarr; <strong>div</strong> &rarr;
+			<strong>div</strong> &rarr; <strong>p</strong></div>
+		<p>This is a simplified example, leaving out many parallel branches, but 
+			illustrates this nesting structure. You can view the structure of 
+			any webpage by using the &ldquo;Inspect Element&rdquo; tool in most
+			browsers.</p>
+	</div>
+	
+	<div class="concept">
+		<h2>Elements as Boxes</h2>
+		<p>The &ldquo;Inspect Element&rdquo; tool will also show you another
+			feature of elements: they are all boxes. This is actually a useful
+			feature of HTML and CSS, as it allows you to easily rearrange elements
+			on a page. It also enables you to break down the design of a a page 
+			into blocks, which has smaller blocks nested inside of it.</p>
+		<p>Treating elements of a page as a gives you a convenient starting point
+			for figuring out how to code a design. For example, this can help you
+			find the best place for each div.</p>
+	</div>
+</div>
+
+<h1>Lesson 3: Adding CSS Style and HTML Structure</h1>
+<div class="lesson">
+	<div class="concept">
+		<h2>CSS</h2>
+		<p>Along with HTML, CSS is one of the most common languages used in web
+			development. <strong>CSS</strong> stands for Cascading Style Sheets.
+			It&rsquo;s <em>cascading</em> because the styling rule of a parent
+			element is applied to all its children (<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">Source</a>).
+			This is also known as inheritance. If there is a more specific rule,
+			though, then the styling of the parent element does not get passed 
+			down. For instance, if I wanted to make all text in a paragraph 
+			(i.e., in the <span class="code">&lt;p&gt;</span> tags) blue, all of
+			the text would also be blue, whether it was bolded, italicized, or
+			underlined. However, if I wrote a rule in CSS that made all underlined
+			text the color red, then that rule would override the paragraph styling,
+			because it&rsquo;s more specific.</p>
+		<p>The syntax of CSS is a bit different than HTMl, though some of the code
+			is similar. It's basically composed of three parts:</p>
+		<ul>
+			<li><strong>selector</strong>: The element of the page a particular
+			style will apply to. This can be HTML (e.g., p, em, ul), or a user-defined
+			<em>class</em>.</li>
+			<li><strong>property:</strong> This tells the browser what particular 
+				aspect of the selector is being styles (e.g., text size, color, etc.).</li>
+			<li>value: The value of a given property.</li></ul>
+		<p>The basic template for CSS, then, would look like this:</p>
+			<div class="code">h2 {<br/>
+				<span class="indent">font-family: Georgia, serif;</span><br/>
+			}</div>
+		<p>If I wanted to style a class, though, it would look more like this:</p>
+			<div class="code">.class {property: value;}</div>
+		<p>Note: If you write CSS all in one line like this, the computer can still
+			read it. However, in other to make it easier for humans to read, it&rsquo;s
+			recommended to indent, by placing each property and value on its own
+			line.</p>
+		</div>
+	
+	<div class="concept">
+		<h2>Use CSS to Avoid Repetition</h2>
+		<p>When doing any coding, one of the primary goals is to prevent repetition.
+			Using selectors and classes in CSS allows you to avoid repetition.</p>
+		<p>Say you wanted to emphasize certain paragraphs by changing the font face,
+			size, and color. If I were just working with HTML, I would have to put
+			something like this in front of each paragraph, each time you changed
+			these values:</p>
+			<div class="code">&lt;font face="Helvetica" color="red" size="15"&gt;</div>
+
+		<p>Then, to get the style of the normal paragraphs, I would have to put in
+			the &lt;font&gt; HTML again, by writing something like this:</p>
+
+			<div class="code">&lt;font face="Georgia" color="black" size="10"&gt;</div>
+
+		<p>If I had to change a lot of paragraphs this way, it would get very
+			tedious, I&rsquo;d have to write a lot more code, and I might be prone
+			to making more mistakes.</p>
+		<p>With CSS, though, I can create a class in a single stylesheet, and use
+			that stylesheet over several webpages (maybe even an entire website)
+			In this case, I could do something like this:</p>
+			<div class="code">.bigred {<br/>
+				<span class="indent">font-family: Helvetica, sans-serif;</span><br/>
+				<span class="indent">size: 20px;</span><br/>
+				<span class="indent">color: red;</span><br/>
+				}</div>
+
+		<p>Then, any time I wanted to use this style, I can give the paragraph the
+			class "bigred":</p>
+			<div class="code">&lt;p class="bigred"&gt;This is an emphasized paragraph.&lt;/p&gt;</div>
+
+		<p>Using classes in CSS also makes it easy to make changes to a design&mdash;so
+			for example, if I decided I wanted to indent the "bigred" class, I could
+			just change the class once in the CSS file, rather than trying to find
+			each instance in the HTML.</p>
+	</div>
+	
+	<div class="concept">
+		<h2>CSS and the Box Model</h2>
+		<p>As stated previously, everything on the web is a box. Well, a page element 
+			is not just a simple box&mdash;it&rsquo;s a bit more complicated than
+			that! For any given element, a total of three other boxes surround it.
+			Starting from the inside and working out, an element is composed of each
+			of the following:</p>
+		<ul>
+			<li><strong>Content:</strong> The text or image</li>
+			<li><strong>Padding:</strong> Acts as a buffer around the content</li>
+			<li><strong>Border:</strong> Surrounds the content and image</li>
+			<li><strong>Margin:</strong> Clears an area around the border</li>
+		</ul>
+		<p>Each of these elements can be controlled independently of the other in
+			HTML. However, that gets complicated quickly. To simplify matters, the
+			following CSS can be used:</p>
+			<div>*{box-sizing: border-box;}</div>
+			<p>With this code, the overall width of a box is not affected by changes
+				to the padding and border. This code does not take the margin into
+				account. To make this work on older browsers, additional code is
+				needed.</p>
+			<p>Another useful bit of CSS makes divs appear next to each other, rather
+				than take up the entire width of the page. To do this, place the
+				following declaration in the relevant selectors:</p>
+				<div class="code">display: flex;</div>
+	</div>
+	
+	<div class="concept">
+		<h2>Process</h2>
+		<p>Here are the basic steps of the web design process:</p>
+		<ol>
+			<li>Look for natural boxes.</li>
+			<li>Find styles and semantic elements that can be repeated.</li>
+			<li>Write HTML.</li>
+			<li>Write CSS, and apply styles starting at the biggest elements and
+				working down the the smallest ones.</li>
+			<li>Fix things as you go along by continuously looking at how your changes
+				affect the design.</li>
+		</ol>
+	</div>
+</div>
+<h1 class="sources">Sources</h1>
+	<ul class="sources">
+		<li><a href="http://www.colourlovers.com/palette/940086/mystery_machine">Colour Lovers: &ldquo;Mystery Machine&rdquo; Palette</a></li>
+		<li><a href="https://developers.google.com/fonts/docs/getting_started">Google Fonts: Get Started (Font used: Shadows into Light)</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla CSS Reference</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">Mozilla HTML Reference</a>
+		<li><a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">Wikipedia section on Inheritance</a></li>
+	</ul>
+</body>
+</html>
