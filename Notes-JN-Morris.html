@@ -1,281 +1,1498 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
 <title>Introduction to Programming - JN Morris Notes</title>
 </head>
+
 <body>
+
 <h1 class="intro-h1">Introduction to Web Programming</h1>
+
 <div class="intro">
-	<p>In this Nano Degree, we are learning the basics of web programming,
-		including HTML/CSS and Python. The class will also teach you how to
-		think like a programmer by utilizing specific critical thinking and
-		problem-solving skills&mdash;including techonological empathy (e.g.,
-		computers are stupid and will only do what you tell them to do).</p>
+	<p>
+		In this Nano Degree, we are learning the basics
+		of web programming, including HTML/CSS and Python. 
+		The class will also teach you how to think like
+		a programmer by utilizing specific critical thinking
+		and problem-solving skills&mdash;including 
+		techonological empathy (e.g., computers are stupid
+		and will only do what you tell them to do).
+	</p>
 </div>
 
-<h1>Lesson 1: The Basics of the Web</h1>
+<h1>Lesson 1.1: The Basics of the Web</h1>
+
 <div class="lesson">
+
 	<div class="concept">
 		<h2>The Web</h2>
-		<p>The web is essentially a collection of documents. Most of these
-			documents are HTML documents (but there are also PDFs, image 
-			files, etc). A user uses a <strong>web browser</strong> on his
-			or her computer to view the Internet. In order to do this, the
-			user&rsquo;s computer must send a request with <strong>HTTP</strong>
-			(hypertext transfer protocol) to <strong>servers</strong> which
-			store the HTML pages. The Internet is just a collection of many 
-			servers connected together, interpreted through a web browser.</p>
-			<p>HTML stands for <strong>HyperText Markup Language</strong>.
-				An HTML document has three basic components:</p>
-			<ul>
-				<li><strong>text</strong>, or the main content of a page;</li>
-				<li><strong>markup</strong>, the code telling the computer 
-					what a page should look like; and</li>
-				<li><strong>links to other pages</strong>.</li>
-			</ul>
+
+		<p>
+			The web is essentially a collection of 
+			documents. Most of these documents are HTML 
+			documents, but there are also PDFs, image
+			files, etc. A user uses a <strong>web browser</strong>
+			on his or her computer to view the Internet.
+			In order to do this, the user&rsquo;s computer
+			must send a request with <strong>HTTP</strong>
+			(hypertext transfer protocol) to <strong>servers</strong>
+			which store the HTML pages. The Internet is
+			just a collection of many servers connected
+			together, interpreted through a web browser.
+		</p>
+
+		<p>
+			HTML stands for <strong>HyperText Markup
+			Language</strong>. An HTML document has three
+			basic components:
+		</p>
+
+		<ul>
+			<li><strong>text</strong>, or the main content
+				of a page;</li>
+			<li><strong>markup</strong>, the code telling
+				the computer what a page should look like;
+				and</li>
+			<li><strong>links to other pages</strong>.</li>
+		</ul>
 	</div>
 
 	<div class="concept">
 		<h2>HTML Markup</h2>
-		<p>The basic unit of HTML markup is the <strong>tag</strong>. A tag
-			is always surrounded by angle brackets
-			(<span class="code">&lt; &gt;</span>). Most tags have an opening
-			tag and a closing tag. A closing tag has a forward slash after the
-			first bracket (<span class="code">&lt;/&nbsp;&gt;</span>). Everything between tags is known as an 
-			<strong>element</strong>.</p>
-		<p>Some tags have what is known as an <em>attribute</em>. An
-			attribute is a property of an HTML element. For example, the
-			<strong>anchor</strong> tag, used to create links (like 
-			<a href="http://www.google.com">this one to Google</a>), has an
-			attribute known as <em>href</em>. So, a link would look like this:</p>
-			<div class="code">&lt;a href="url"&gt;link text&lt;/a&gt;</div>
-		<p>Tags can have more than one attribute; for instance, the
-			<span class="code">&lt;img&gt;</span> tag, used for linking to and
-			displaying images, usually has two attributes, <em>src</em>
-			(for <em>source</em>) and <em>alt</em> (for <em>alternate</em>).
-			The <strong>src</strong> tag is used to link to the url of the
-			image, while <strong>alt</strong> displays text if a link to
-			the image is broken or a page is being viewed by a blind person.</p>
-		<p>The <span class="code">&lt;img&gt;</span> tag is a type known as a void
-			tag. This simply means that there is no content (text) within
-			the tag. Void tags do not need closing tags (and can be
-			&ldquo;self-closed&rdquo; with a forward slash immediately
-			before the final angle bracket). Another void tag is used for
-			line breaks, <span class="code">&lt;br/&gt;</span>.</p>
+
+		<p>
+			The basic unit of HTML markup is the <strong>tag</strong>. 
+			A tag is always surrounded by angle brackets
+			(<span class="code">&lt;&nbsp;&gt;</span>).
+			Most tags have an opening tag and a closing 
+			tag. A closing tag has a forward slash after
+			the first bracket (<span class="code">&lt;/&nbsp;&gt;</span>).
+			Everything between tags is known as an <strong>element</strong>.
+		</p>
+		
+		<p>
+			Some tags have what is known as an <em>attribute</em>.
+			An attribute is a property of an HTML element.
+			For example, the <strong>anchor</strong> tag,
+			used to create links (like <a href="http://www.google.com">
+			this one to Google</a>), has an attribute
+			known as <em>href</em>. So, a link would
+			look like this:
+		</p>
+
+		<p class="code">&lt;a href="url"&gt;linktext&lt;/a&gt;</p>
+		
+		<p>
+			Tags can have more than one attribute; for
+			instance, the <span class="code">&lt;img&gt;</span>
+			tag, used for linking to and displaying images,
+			usually has two attributes, <em>src</em> 
+			(for <em>source</em>) and <em>alt</em> (for
+			<em>alternate</em>).
+			The <strong>src</strong> tag is used to link
+			to the url of the image, while <strong>alt</strong>
+			displays text if a link to the image is broken
+			or a page is being viewed by a blind person.
+		</p>
+		
+		<p>
+			The <span class="code">&lt;img&gt;</span> 
+			tag is a type known as a void tag. This simply
+			means that there is no content (text) within
+			the tag. Void tags do not need closing tags
+			(and can be &ldquo;self-closed&rdquo; with
+			a forward slash immediately before the final
+			angle bracket). Another void tag is used for
+			line breaks, <span class="code">&lt;br/&gt;</span>.
+		</p>
 	</div>
 
 	<div class="concept">
 		<h2>Inline Tags vs. Block Tags</h2>
-		<p><strong>Inline tags</strong> are tags which occur within a text.
-			Many common tags are inline tags, such as:</p>
+		
+		<p>
+			<strong>Inline tags</strong> are tags which
+			occur within a text. Many common tags are
+			inline tags, such as:
+		</p>
+		
 		<ul>
 			<li>line break: <span class="code">&lt;br/&gt;</span></li>
 			<li>image: <span class="code">&lt;img&gt;</span></li>
 			<li><em>italics</em>: <span class="code">&lt;em&gt;</span></li>
-			<li><strong>bold</strong>: <span class="code">&lt;b&gt;</span> or 
-				<span class="code">&lt;strong&gt;</span>.</li>
-			</ul>
-		<p>On the other hand, a <strong>block tag</strong>, is one that
-			sections off an entire section of text, creating an invisible
-			&ldquo;box&rdquo; around an element. The most common block tag
-			is probably the paragraph, or <span class="code">&lt;p&gt;</span>.</p>
+			<li><strong>bold</strong>: <span class="code">&lt;b&gt;</span>
+				or <span class="code">&lt;strong&gt;</span>.</li>
+		</ul>
+		
+		<p>
+			On the other hand, a <strong>block tag</strong>,
+			is one that sections off an entire section
+			of text, creating an invisible &ldquo;box&rdquo;
+			around an element. The most common block tag
+			is probably the paragraph, or 
+			<span class="code">&lt;p&gt;</span>.
+		</p>
+		
 		<h3>Span and Div</h3>
-		<p>The difference between inline and block tags can be illustrated
-			by comparing the <span class="code">&lt;span&gt;</span> and 
-			<span class="code">&lt;div&gt;</span> tags. Both tags are 
-			<strong>container</strong> tags&mdash;they surround an element
-			in a certain style. However, <span class="code">&lt;span&gt;</span>
-			is an inline tag, existing within a line or block, while
-			<span class="code">&lt;div&gt;</span> is a block tag, creating a 
-			&ldquo;box&rdquo; or block around an element.</p>
+		
+		<p>
+			The difference between inline and block tags
+			can be illustrated by comparing the 
+			<span class="code">&lt;span&gt;</span> and 
+			<span class="code">&lt;div&gt;</span> tags.
+			Both tags are <strong>container</strong>
+			tags&mdash;they surround an element in a certain
+			style. However, <span class="code">&lt;span&gt;</span>
+			is an inline tag, existing within a line or
+			block, while <span class="code">&lt;div&gt;</span>
+			is a block tag, creating a &ldquo;box&rdquo;
+			or block around an element.
+		</p>
 	</div>
 
 	<div class="concept">
 		<h2>Anatomy of a Page</h2>
-		<p>There are many tags, but all HTML pages have the following parts
-			which make up the skeleton or backbone of a page:</p>
+		
+		<p>
+			There are many tags, but all HTML pages have
+			the following parts which make up the skeleton
+			or backbone of a page:
+		</p>
+		
 		<ul>
-			<li><span class="code">&lt;!DOCTYPE HTML&gt;</span> : tells you what
-				the document type is</li>
-			<li><span class="code">&lt;html&gt;</span> : starts and ends each
-				HTML document</li>
-			<li><span class="code">&lt;head&gt;</span> : This tag contains the
-				<em>metadata</em> of a page. This can include the title
-				(enclosed by <span class="code">&lt;title&gt;</span> tags), links
-				to any referenced CSS or JavaScript pages, and the like.</li>
-			<li><span class="code">&lt;body&gt;</span> : These tags enclose the 
-				main content of the page&mdash;all the text, images, and
+			<li><span class="code">&lt;!DOCTYPE HTML&gt;</span> : 
+				tells you what the document type is</li>
+			<li><span class="code">&lt;html&gt;</span> :
+				starts and ends each HTML document</li>
+			<li><span class="code">&lt;head&gt;</span> :
+				This tag contains the <em>metadata</em>
+				of a page. This can include the title
+				(enclosed by <span class="code">&lt;title&gt;</span> 
+				tags), links to any referenced CSS or 
+				JavaScript pages, and the like.</li>
+			<li><span class="code">&lt;body&gt;</span> :
+				These tags enclose the main content of
+				the page&mdash;all the text, images, and
 				links within a page.</li>
 		</ul>
+
 	</div>
+
 </div>
 
-<h1>Lesson 2: Creating Structured Documents with HTML</h1>
+<h1>Lesson 1.2: Creating Structured Documents with HTML</h1>
+
 <div class="lesson">
+
 	<div class="concept">
 		<h2>Languages of the Web</h2>
-		<p>When you write a webpage, you are using two basic languages, HTML and
-			CSS:</p>
+
+		<p>
+			When you write a webpage, you are using two
+			basic languages, HTML and CSS:
+		</p>
+
 		<ul>
-			<li><strong>HTML</strong> provides the <em>structure</em> of a
-				page&mdash;what the headings, paragraphs, links, and images
-				are.</li>
-			<li><strong>CSS</strong>, or Cascading Style Sheets, tells the
-				browser how a page is styled: the font size and color of each
-				element, the position of elements, borders, and so on.</li>
+			<li><strong>HTML</strong> provides the
+				<em>structure</em> of a page&mdash;what
+				the headings, paragraphs, links, and
+				images are.</li>
+			<li><strong>CSS</strong>, or Cascading Style
+				Sheets, tells the browser how a page is
+				styled: the font size and color of each
+				element, the position of elements, borders,
+				and so on.</li>
 		</ul>
 	</div>
 
 	<div class="concept">
 		<h2>The Structure of an HTML Page</h2>
-		<p>An HTML page can be conceptualized with a tree model, with elements
-			branching out within or beneath other elements. For example, the
-			paragraph you are reading right now is nested as follows:</p>
-		<div class="indent"><strong>body</strong> &rarr; <strong>div</strong> &rarr;
-			<strong>div</strong> &rarr; <strong>p</strong></div>
-		<p>This is a simplified example, leaving out many parallel branches, but 
-			illustrates this nesting structure. You can view the structure of 
-			any webpage by using the &ldquo;Inspect Element&rdquo; tool in most
-			browsers.</p>
+	
+		<p>
+			An HTML page can be conceptualized with a tree
+			model, with elements branching out within or
+			beneath other elements. For example, the
+			paragraph you are reading right now is nested
+			as follows:
+		</p>
+		
+		<div class="indent"><strong>body</strong> &rarr;
+			<strong>div</strong> &rarr; <strong>div</strong>
+			&rarr; <strong>p</strong></div>
+		
+		<p>
+			This is a simplified example, leaving out
+			many parallel branches, but illustrates this
+			nesting structure. You can view the structure
+			of any webpage by using the &ldquo;Inspect
+			Element&rdquo; tool in most browsers.
+		</p>
 	</div>
 	
 	<div class="concept">
 		<h2>Elements as Boxes</h2>
-		<p>The &ldquo;Inspect Element&rdquo; tool will also show you another
-			feature of elements: they are all boxes. This is actually a useful
-			feature of HTML and CSS, as it allows you to easily rearrange elements
-			on a page. It also enables you to break down the design of a a page 
-			into blocks, which has smaller blocks nested inside of it.</p>
-		<p>Treating elements of a page as a gives you a convenient starting point
-			for figuring out how to code a design. For example, this can help you
-			find the best place for each div.</p>
+
+		<p>
+			The &ldquo;Inspect Element&rdquo; tool will
+			also show you another feature of elements:
+			they are all boxes. This is actually a useful
+			feature of HTML and CSS, as it allows you to
+			easily rearrange elements on a page. It also
+			enables you to break down the design of a
+			page into blocks, which has smaller blocks
+			nested inside of it.
+		</p>
+		
+		<p>
+			Treating elements of a page as a gives you
+			a convenient starting point for figuring out
+			how to code a design. For example, this can
+			help you find the best place for each div.
+		</p>
 	</div>
 </div>
 
-<h1>Lesson 3: Adding CSS Style and HTML Structure</h1>
+<h1>Lesson 1.3: Adding CSS Style and HTML Structure</h1>
+
 <div class="lesson">
+
 	<div class="concept">
 		<h2>CSS</h2>
-		<p>Along with HTML, CSS is one of the most common languages used in web
-			development. <strong>CSS</strong> stands for Cascading Style Sheets.
-			It&rsquo;s <em>cascading</em> because the styling rule of a parent
-			element is applied to all its children (<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">Source</a>).
-			This is also known as inheritance. If there is a more specific rule,
-			though, then the styling of the parent element does not get passed 
-			down. For instance, if I wanted to make all text in a paragraph 
-			(i.e., in the <span class="code">&lt;p&gt;</span> tags) blue, all of
-			the text would also be blue, whether it was bolded, italicized, or
-			underlined. However, if I wrote a rule in CSS that made all underlined
-			text the color red, then that rule would override the paragraph styling,
-			because it&rsquo;s more specific.</p>
-		<p>The syntax of CSS is a bit different than HTMl, though some of the code
-			is similar. It's basically composed of three parts:</p>
+
+		<p>
+			Along with HTML, CSS is one of the most common
+			languages used in web development.
+			<strong>CSS</strong> stands for Cascading
+			Style Sheets. It&rsquo;s <em>cascading</em>
+			because the styling rule of a parent element
+			is applied to all its children
+			(<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">
+			Source</a>). This is also known as inheritance. 
+			If there is a more specific rule, though,
+			then the styling of the parent element does
+			not get passed down. For instance, if I wanted
+			to make all text in a paragraph (i.e., in
+			the <span class="code">&lt;p&gt;</span> tags)
+			blue, all of the text would also be blue,
+			whether it was bolded, italicized, or underlined.
+			However, if I wrote a rule in CSS that made
+			all underlined text the color red, then that
+			rule would override the paragraph styling,
+			because it&rsquo;s more specific.
+		</p>
+
+		<p>
+			The syntax of CSS is a bit different than
+			HTML, though some of the code is similar.
+			It&rsquo;s basically composed of three parts:
+		</p>
+		
 		<ul>
-			<li><strong>selector</strong>: The element of the page a particular
-			style will apply to. This can be HTML (e.g., p, em, ul), or a user-defined
-			<em>class</em>.</li>
-			<li><strong>property:</strong> This tells the browser what particular 
-				aspect of the selector is being styles (e.g., text size, color, etc.).</li>
-			<li>value: The value of a given property.</li></ul>
-		<p>The basic template for CSS, then, would look like this:</p>
-			<div class="code">h2 {<br/>
-				<span class="indent">font-family: Georgia, serif;</span><br/>
-			}</div>
-		<p>If I wanted to style a class, though, it would look more like this:</p>
-			<div class="code">.class {property: value;}</div>
-		<p>Note: If you write CSS all in one line like this, the computer can still
-			read it. However, in other to make it easier for humans to read, it&rsquo;s
-			recommended to indent, by placing each property and value on its own
-			line.</p>
+			<li><strong>selector</strong>: The element
+				of the page a particular style will apply
+				to. This can be HTML (e.g., p, em, ul),
+				or a user-defined <em>class</em>.</li>
+			<li><strong>property:</strong> This tells
+				the browser what particular aspect of
+				the selector is being styles (e.g., text
+				size, color, etc.).</li>
+			<li>value: The value of a given property.</li>
+		</ul>
+
+		<p>
+			The basic template for CSS, then, would look
+			like this:
+		</p>
+		
+		<div class="code">
+			h2 {<br/>
+			<span class="indent">font-family: Georgia,
+				serif;</span><br/>
+			}
 		</div>
+		
+		<p>
+			If I wanted to style a class, though, it
+			would look more like this:
+		</p>
+		
+		<p class="code">.class {property: value;}</p>
+		
+		<p>
+			Note: If you write CSS all in one line like
+			this, the computer can still read it. However,
+			in other to make it easier for humans to read,
+			it&rsquo;s recommended to indent, by placing
+			each property and value on its own line.
+		</p>
+	</div>
 	
 	<div class="concept">
 		<h2>Use CSS to Avoid Repetition</h2>
-		<p>When doing any coding, one of the primary goals is to prevent repetition.
-			Using selectors and classes in CSS allows you to avoid repetition.</p>
-		<p>Say you wanted to emphasize certain paragraphs by changing the font face,
-			size, and color. If I were just working with HTML, I would have to put
-			something like this in front of each paragraph, each time you changed
-			these values:</p>
-			<div class="code">&lt;font face="Helvetica" color="red" size="15"&gt;</div>
+	
+		<p>
+			When doing any coding, one of the primary
+			goals is to prevent repetition. Using selectors
+			and classes in CSS allows you to avoid repetition.
+		</p>
 
-		<p>Then, to get the style of the normal paragraphs, I would have to put in
-			the &lt;font&gt; HTML again, by writing something like this:</p>
+		<p>
+			Say you wanted to emphasize certain paragraphs
+			by changing the font face, size, and color.
+			If I were just working with HTML, I would
+			have to put something like this in front of
+			each paragraph, each time you changed these
+			values:
+		</p>
 
-			<div class="code">&lt;font face="Georgia" color="black" size="10"&gt;</div>
+		<p class="code">&lt;font face="Helvetica" color="red" size="15"&gt;</p>
 
-		<p>If I had to change a lot of paragraphs this way, it would get very
-			tedious, I&rsquo;d have to write a lot more code, and I might be prone
-			to making more mistakes.</p>
-		<p>With CSS, though, I can create a class in a single stylesheet, and use
-			that stylesheet over several webpages (maybe even an entire website)
-			In this case, I could do something like this:</p>
-			<div class="code">.bigred {<br/>
-				<span class="indent">font-family: Helvetica, sans-serif;</span><br/>
-				<span class="indent">size: 20px;</span><br/>
-				<span class="indent">color: red;</span><br/>
-				}</div>
+		<p>
+			Then, to get the style of the normal paragraphs,
+			I would have to put in the &lt;font&gt; HTML
+			again, by writing something like this:
+		</p>
 
-		<p>Then, any time I wanted to use this style, I can give the paragraph the
-			class "bigred":</p>
-			<div class="code">&lt;p class="bigred"&gt;This is an emphasized paragraph.&lt;/p&gt;</div>
+		<p class="code">&lt;font face="Georgia" color="black" size="10"&gt;</p>
 
-		<p>Using classes in CSS also makes it easy to make changes to a design&mdash;so
-			for example, if I decided I wanted to indent the "bigred" class, I could
-			just change the class once in the CSS file, rather than trying to find
-			each instance in the HTML.</p>
+		<p>
+			If I had to change a lot of paragraphs this
+			way, it would get very tedious, I&rsquo;d
+			have to write a lot more code, and I might
+			be prone to making more mistakes.
+		</p>
+
+		<p>
+			With CSS, though, I can create a class in a
+			single stylesheet, and use that stylesheet
+			over several webpages (maybe even an entire
+			website). In this case, I could do something
+			like this:
+		</p>
+		
+		<p class="code">
+			.bigred {<br/>
+			<span class="indent">font-family: Helvetica,
+				sans-serif;</span><br/>
+			<span class="indent">size: 20px;</span><br/>
+			<span class="indent">color: red;</span><br/>
+			}
+		</p>
+
+		<p>
+			Then, any time I wanted to use this style,
+			I can give the paragraph the class "bigred":
+		</p>
+	
+		<p class="code">&lt;p class="bigred"&gt;This is
+			an emphasized paragraph.&lt;/p&gt;</p>
+
+		<p>
+			Using classes in CSS also makes it easy to
+			make changes to a design&mdash;so for example,
+			if I decided I wanted to indent the "bigred"
+			class, I could just change the class once in
+			the CSS file, rather than trying to find each
+			instance in the HTML.
+		</p>
 	</div>
 	
 	<div class="concept">
 		<h2>CSS and the Box Model</h2>
-		<p>As stated previously, everything on the web is a box. Well, a page element 
-			is not just a simple box&mdash;it&rsquo;s a bit more complicated than
-			that! For any given element, a total of three other boxes surround it.
-			Starting from the inside and working out, an element is composed of each
-			of the following:</p>
+		
+		<p>
+			As stated previously, everything on the web
+			is a box. Well, a page element is not just
+			a simple box&mdash;it&rsquo;s a bit more
+			complicated than that! For any given element,
+			a total of three other boxes surround it.
+			Starting from the inside and working out, an
+			element is composed of each of the following:
+		</p>
+		
 		<ul>
-			<li><strong>Content:</strong> The text or image</li>
-			<li><strong>Padding:</strong> Acts as a buffer around the content</li>
-			<li><strong>Border:</strong> Surrounds the content and image</li>
-			<li><strong>Margin:</strong> Clears an area around the border</li>
+			<li><strong>Content:</strong> The text or
+				image</li>
+			<li><strong>Padding:</strong> Acts as a buffer
+				around the content</li>
+			<li><strong>Border:</strong> Surrounds the
+				content and image</li>
+			<li><strong>Margin:</strong> Clears an area
+				around the border</li>
 		</ul>
-		<p>Each of these elements can be controlled independently of the other in
-			HTML. However, that gets complicated quickly. To simplify matters, the
-			following CSS can be used:</p>
-			<div>*{box-sizing: border-box;}</div>
-			<p>With this code, the overall width of a box is not affected by changes
-				to the padding and border. This code does not take the margin into
-				account. To make this work on older browsers, additional code is
-				needed.</p>
-			<p>Another useful bit of CSS makes divs appear next to each other, rather
-				than take up the entire width of the page. To do this, place the
-				following declaration in the relevant selectors:</p>
-				<div class="code">display: flex;</div>
+
+		<p>
+			Each of these elements can be controlled 
+			independently of the other in HTML. However,
+			that gets complicated quickly. To simplify
+			matters, the following CSS can be used:
+		</p>
+
+		<p class="code">*{box-sizing: border-box;}</p>
+		
+		<p>With this code, the overall width of a box is
+			not affected by changes	to the padding and
+			border. This code does not take the margin
+			into account. To make this work on older 
+			browsers, additional code is needed.
+		</p>
+
+		<p>
+			Another useful bit of CSS makes divs appear
+			next to each other, rather than take up the
+			entire width of the page. To do this, place
+			the following declaration in the relevant 
+			selectors:
+		</p>
+
+		<div class="code">display: flex;</div>
 	</div>
 	
 	<div class="concept">
 		<h2>Process</h2>
-		<p>Here are the basic steps of the web design process:</p>
+	
+		<p>
+			Here are the basic steps of the web design
+			process:
+		</p>
+
 		<ol>
 			<li>Look for natural boxes.</li>
-			<li>Find styles and semantic elements that can be repeated.</li>
+			<li>Find styles and semantic elements that 
+				can be repeated.</li>
 			<li>Write HTML.</li>
-			<li>Write CSS, and apply styles starting at the biggest elements and
-				working down the the smallest ones.</li>
-			<li>Fix things as you go along by continuously looking at how your changes
-				affect the design.</li>
+			<li>Write CSS, and apply styles starting at
+				the biggest elements and working down
+				the the smallest ones.</li>
+			<li>Fix things as you go along by continuously
+				looking at how your changes affect the
+				design.</li>
 		</ol>
 	</div>
 </div>
+
+<h1>Lesson 2.1: Introduction to Serious Programming</h1>
+
+<div class="lesson">
+
+	<div class="concept">
+		<h2>What is Programming?</h2>
+
+		<p>
+			<strong>Programming</strong> is the process
+			of writing code to tell a computer what to
+			do. Programs are what allow computers to be
+			arguably our most powerful and versatile
+			machines: if we can write instructions for
+			it, we can make a computer do just about 
+			anything.
+		</p>
+
+		<p>
+			These instructions, called a <strong>program</strong>,
+			are written using a specific set of formal 
+			rules, known as a <strong>programming
+			language</strong>.
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>Programming vs. Natural Languages</h2>
+
+		<p>
+			Two features of natural languages make them
+			unsuitable for writing code:
+		</p>
+
+		<ul>
+			<li>
+				They are <strong>ambiguous</strong>. This
+				occurs not only on a lexical level (e.g.,
+				the word &ldquo;cleave&rdquo; has two 
+				contradictory meanings), but at other
+				levels as well. Since computers are stupid,
+				and only do what we tell them to do,
+				anyone writing code needs to avoid this
+				sort of ambiguity.
+			</li>
+			<li>
+				They are <strong>verbose</strong>. It 
+				takes much more text (and therefore much
+				more data) to explain instructions in
+				plain English (or Greek, or Japanese, or
+				Hindi) what can be explained in a few
+				spare lines in code.
+			</li>
+		</ul>
+
+		<p>
+			There are a few similarities between natural
+			languages and computer languages, though.
+			Like English, a programming language has a
+			set of rules which make up its 
+			<strong>grammar</strong>, and a &ldquo;phrase&rdquo;
+			has a specific syntax that it must follow.
+			Programming languages have far fewer of these
+			rules, and a computer won&rsquo;t understand
+			imperfect syntax (which is unlike the way a
+			human might understand the imperfect grammar
+			of a non-native speaker or a three-year-old
+			child.)
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>Python</h2>
+
+		<p>
+			There are many, many programming languages.
+			One of the most popular is known as Python.
+			Python has many syntactical rules. An example
+			is this set of rules for arthimetic expressions:
+		</p>
+
+		<ul>
+			<li>Expression &rarr; Expression Operator 
+				Expression</li>
+			<li>Expression &rarr; Number</li>
+			<li>Expression &rarr; (Expression)</li>
+			<li>Operator &rarr; +, *, etc.</li>
+			<li>Number &rarr; 0, 1, 2, 3...</li>
+		</ul>
+
+		<p>
+			This set of rules illustrates an important
+			feature of programming rules known as 
+			<strong>recursion</strong>. In this case, it 
+			means that we can have a long string of arthimetic 
+			functions (in theory, an infinite length) 
+			because the <strong>expression</strong> exists
+			on both sides of the rule.
+		</p>
+
+		<p>
+			In actual Python, a valid line of arithmetic
+			code could look something like this:
+		</p>
+
+		<p class="code">print 5 * 4 + (5 * (3 + 2))</p>
+	</div>
+</div>
+
+<h1>Lesson 2.2: Variables and Strings</h1>
+<div class="lesson">
+
+	<div class="concept">
+		<h2>Variables</h2>
+
+		<p>
+			<strong>Variables</strong> are a way to label
+			a value and store it for future use. They
+			work similarly to variables in algebra, in
+			that they can stand in for a value in all
+			sorts of computations.
+		</p>
+		
+		<p>
+			Variables are created with <strong>assignment 
+			statements</strong>, which look like this:
+		</p>
+
+		<p class="code">&lt;name&gt; = &lt;expression&gt;</p>
+
+		<p>
+			For example, <span class="code">speed_of_light = 299792458</span>.
+		</p>
+
+		<p>
+			Assignment statements can reference other
+			variables, as long as the variable has already
+			been assigned:
+		</p>
+
+		<div class="code">
+			speed_of_light = 29979458<br/>
+			billionth = 1.0 / 1000000000<br/>
+			nanostick = speed_of_light * billionth * 100<br/>
+			print nanostick<br/>
+			29.9792458
+		</div>
+
+		<p>(Examples taken from class video.)</p>
+
+		<p>
+			You can also change the value of a variable
+			and it will update. This allows you to do 
+			things like:
+		</p>
+
+		<p class="code">
+			days = 31<br/>
+			days = days - 1
+		</p>
+
+		<p>
+			This last statement illustrates the difference
+			between an assignment statement and an algebraic
+			formula, however. The equal sign (=) does
+			not mean equal. Rather, it means &ldquo;is
+			assigned to&rdquo;. If it worked exactly like
+			an equal sign, the statement <span class="code">
+			days = days - 1</span> wouldn&rsquo;t work
+			because there would be no way to evaluate it.
+		</p>
+
+		<p>
+			However, in Python, as long as the variable 
+			<span class="code">days</span> is defined,
+			then <span class="code">days = days - 1</span>
+			can return a value (in our case, 30).
+		</p>
+
+		<p>
+			(On a related note, the code to the right of 
+			the = is always read by the computer first.)
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>Strings</h2>
+		
+		<p>
+			If I want to manipulate something other than
+			a number, I have to use strings. A <strong>string</strong>
+			is a sequence of characters surrounded by
+			either single or double quotes&mdash;either
+			is fine, as long as they are closed with the
+			same type of quotation mark.
+		</p>
+	
+		<p>
+			You can add strings together: <span class="code">'stop'
+			+ 's'</span>. This is known as <strong>concatenation</strong>.
+			You cannot, however, add strings and integers 
+			together; however, it is possible to multiply
+			strings.
+		</p>
+	
+		<h3>Indexing Strings</h3>
+
+		<p>
+			Indexing is a way to find out what character
+			is in a given position of the string. This
+			is done with the following syntax:
+		</p>
+
+		<p class="code">&lt;string&gt;[&lt;expression&gt;]</p>
+		<p>The &lt;expression&gt; is the number of a
+			position of the string. Three important points:</p>
+		<ul>
+			<li>The count starts with 0,</li>
+			<li>You can use negative numbers to count
+				from the end of a string, and</li>
+			<li>If you try to index a number larger than
+				the length of the string, an error will
+				be returned.</li>
+		</ul>
+
+		<p>So, for example:</p>
+
+		<p class="code">
+			name = "Cheryl"<br/>
+			print name[0]<br/>
+			C<br/>
+			print name[-2]<br/>
+			y</br>
+			print name[7]<br/>
+			IndexError: string index out of range</br>
+		</p>
+	
+		<h3>Sub-Sequences</h3>
+	
+		<p>
+			Similar to index, this pulls a range of sub-strings
+			from within a larger string. The syntax is 
+			only slightly different: 
+		</p>
+
+		<p class="code">&lt;string&gt;[&lt;expression&gt;:&lt;expression&gt;]</p>
+		
+		<p>This means that you want to reference the bit
+			of the string from the first position (left 
+			of the colon) up to and <strong>not</strong>
+			including the part of the string of the second
+			position (right of the colon).
+		</p>
+
+		<p>
+			Using the example variable <span class="code">name</span>
+			from above:
+		</p>
+
+		<p class="code">
+			print name[1:3]<br/>
+			he<br/>
+			print name[1:5]<br/>
+			hery<br/>
+		</p>
+
+		<p>
+			Either side of the colon can be left blank.
+			If the left side of the colon is blank, it
+			means to start at the beginning of the string
+			(i.e., position 0). If the right is blank,
+			it means to end at the end of the string. 
+			The latter is particularly useful if you
+			don&rsquo;t know how long a string is (or
+			don&rsquo;t want to count it) and you want
+			the final bit of it.
+		</p>
+
+		<p class="code">
+			print name[2:]<br/>
+			eryl<br/>
+			print name[:3]<br/>
+			Che</p>
+	</div>
+	
+	<div class="concept">
+		<h2>Finding Strings Within Strings</h2>
+
+		<p>
+			If I want to find the location of a string
+			within a string, I use the following:
+		</p>
+
+		<p class="code">&lt;string&gt;.find(&lt;string&gt;)</p>
+		
+		<p>
+			So for example, <span class="code">name.find("he")</span>
+			would return the number 1, because it appears 
+			at position 1.
+		</p>
+
+		<p>If I have a longer string, and want to find
+			a string after a certain position, the syntax
+			would be:</p>
+
+		<p class="code">&lt;string&gt;.find(&lt;string&gt;,&lt;number&gt;)</p>
+
+		<p>So, I could do something like this:</p>
+
+		<p class="code">
+			preamble = "We the People of the United States,
+			in Order to form a more perfect Union, establish
+			Justice, insure domestic Tranquility, provide
+			for the common defence, promote the general
+			Welfare, and secure the Blessings of Liberty
+			to ourselves and our Posterity, do ordain
+			and establish this Constitution for the United
+			States of America."<br/>
+			&gt;&gt;&gt;&nbsp;preamble.find("the")
+			<span class="comment">#This is a simple find.</span><br/>
+			3<br/>
+			&gt;&gt;&gt;&nbsp;preamble.find("the", 3)
+			<span class="comment">#This will return 3, 
+				because it starts looking at 3, and finds
+				"the"</span><br/>
+			3<br/>
+			&gt;&gt;&gt;&nbsp;preamble.find("the", 4) 
+			<span class="comment">#To find "the" after
+				position 4</span><br/>
+			17<br/>
+			&gt;&gt;&gt;&nbsp;preamble.find("spaceship")<br/>
+			-1 <span class="comment">#When a string isn't
+			found, -1 is returned</span>
+		</p>
+	</div>
+</div>
+
+<h1>Lesson 2.3: Input, Functions, Output</h1>
+<div class="lesson">
+
+	<div class="concept">
+		<h2>Functions</h2>
+
+		<p>
+			A <strong>function</strong>, also known as
+			a <em>procedure</em>, is a piece of code that
+			takes in an input to produce an output. The
+			basic format of the code looks like this:</p>
+		
+		<p class="code">
+			&lt;function&gt;(&lt;input&gt;,&lt;input&gt;):
+		</p>
+
+		<p>
+			We have already looked at one kind of function,
+			the <span class="code">find</span> function.
+			Programmers are able to define their own
+			functions, however, and often do.</p>
+	</div>
+
+	<div class="concept">
+		<h2>Inputs and Outputs</h2>
+
+		<p>
+			<strong>Inputs</strong>, also called <em>operands</em>
+			or <em>arguments</em>, are what go between
+			the parentheses of the function.
+			<strong>Outputs</strong> are the result of
+			running the function. In order to get an
+			output, we need to write additional code to
+			<em>use</em> the output. The simplest way to
+			do this is with a <span class="code">print</span> 
+			statement. In the example below, I have
+			labeled the inputs and outputs:
+		</p>
+
+		<p class="code">
+			def pluralize(word): 
+			<span class="comment">#defines the input</span><br/>
+			<span class="indent">return word + "s"
+				<span class="comment">#defines the 
+					output</span></span>
+				<br/>
+				</br>
+			print pluralize("cow") 
+			<span class="comment">#"cow" is the 
+			input</span><br/>
+			cows <span class="comment">#This is the
+			output</span>
+		</p>
+
+		<p>
+			To define a function, two bits must be in
+			the code:
+		</p>
+
+		<ul>
+			<li><span class="code">def</span> introduces 
+				the name of the function and the type
+				and number of inputs that function will
+				take.</li>
+			<li><span class="code">return</span> says
+				what the output will be. Without it, we
+				can&rsquo;t use any values that might be
+				part of our input.</li>
+		</ul>
+	</div>
+
+	<div class="concept">
+		<h2>How Functions Reduce Repetition</h2>
+
+		<p>
+			Functions are useful to programmers because,
+			once defined, they can be used over and over
+			again, no matter what the inputs.
+		</p>
+		
+		<p>
+			For instance, in the previous example, we 
+			<em>could</em> just use simple concatenation
+			every time:
+		</p>
+
+		<p class="code">
+			&gt;&gt;&gt;&nbsp;print "cow" + "s"<br/>
+			cows<br/>
+			&gt;&gt;&gt;&nbsp;print "duck" + "s"<br/>
+			ducks
+		</p>
+
+		<p>
+			But it would be a waste of time, because for
+			the most part, writing a simple rule (or 
+			<em>function</em>) would let us pluralize
+			any input. (Of course, English is tricky,
+			and this function by itself would not always
+			produce valid words; but that is what if
+			statements are for!)
+		</p>
+	</div>
+
+</div>
+
+<h1>Lesson 2.4: Control Flow and Loops: If and While</h1>
+<div class="lesson">
+
+	<div class="concept">
+		<h2>If Statements and Comparisons</h2>
+	
+		<p>
+			One of the key features of an <strong>if 
+			statement</strong> is that is uses comparisons.
+			<strong>Comparisons</strong> look like the
+			syntax for simple arithmetic, except that:		
+		</p>
+		
+		<ul>
+			<li>The operators are
+				<span class="code">&lt;</span>,
+				<span class="code">&gt;</span>,
+				<span class="code">!=</span>
+				(does not equal), or <span class="code">==</span>
+				(equals). Note that ask whether something
+				<em>equals</em> something else, two equal
+				signs are needed, to differentiate this
+				from an assignment statement.</li>
+			<li>The output of a comparison is a 
+				<strong>Boolean value</strong>, i.e.,
+				True or False.</li>
+		</ul>
+
+		<p>
+			Thus, a simple if statement could look something
+			like this:
+		</p>
+		
+		<p class="code">
+			if 50 &lt; 20:<br/>
+			<span class="indent">print "This is true!"</span><br/>
+			else:<br/>
+			<span class="indent">print "This is false!"</span>
+		</p>
+
+		<p>
+			This would, of course, print "This is false!"
+		</p>
+
+		<p>
+			I have now learned the four basic elements
+			of programming&mdash;arithmetic, comparisons,
+			procedures/functions, and if statements.
+			While it is possible to build any computer
+			program using only these tools, programming
+			languages have more sophisticated ways to do
+			tasks more efficiently.
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>While Loops</h2>
+		
+		<p>
+			While loops are used to repeat a certain
+			action as long as (i.e., <em>while</em>) a
+			certain condition is true. The basic syntax
+			for a while loop is:
+		</p>
+		
+		<p class=:"code">
+			while &lt;Test Expression&gt;:<br/>
+			<span class="indent">&lt;Block&gt;</span>
+		</p>
+
+		<p>
+			For example, it&rsquo;s possible to have
+			something like this:
+		</p>
+
+		<p class="code">
+			i = 0<br/>
+			while i &lt; 10:<br/>
+			<span class="indent">print i</span><br/>
+			<span class="indent">i = i + 1</span>
+		</p>
+
+		<p>
+			This loop basically starts with 0 and
+			counts until in reaches 9; It will print the
+			numbers 0&ndash;9.
+		</p>
+
+		<p>
+			While loops are similar to if statements,
+			except that they can run any number
+			of times&mdash;even infinitely (though that
+			is rarely, if ever, the programmer&rsquo;s
+			intention).
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>Breaks</h2>
+
+		<p>
+			Sometimes, you need to interrupt a while loop.
+			To do this, you would use a <strong>break</strong>.
+			If a break test is true, it skips the rest
+			of the while loop and runs the code after.
+			For example:
+		</p>
+		
+		<p class="code">
+			i = 1<br/>
+			while True:<br/>
+			<span class="indent">if i &gt; n:</span><br/>
+			<span class="indent"><span class="indent">break</span></span><br/>
+			<span class="indent">print i</span><br/>
+			<span class="indent">i = i + 1</span>
+		</p>
+		
+		<p>
+			<strong>Note:</strong> The above is only
+			illustrative and should <em>not</em> be used, 
+			as there is a simpler way to do the same 
+			thing, namely:
+		</p>
+
+		<p class="code">
+			i = 1<br/>
+			while i &lt; n:<br/>
+			<span class="indent">print i</span></br>
+			<span class="indent">i = i + 1</span>
+		</p>
+	</div>
+</div>
+
+<h1>Lesson 2.5: Debugging</h1>
+<div class="lesson">
+
+	<div class="concept">
+		<h2>Bugs</h2>
+
+		<p>
+			Errors in computer code are known as
+			<strong>bugs</strong>. Every programmer
+			produces them&mdash;they&rsquo;re unavoidable.
+			It is best to learn strategies for getting
+			rid of bugs, in a process known as
+			debugging.
+		</p>
+
+		<p>
+			Bugs come in two basic flavors: those
+			that cause an error message when the code
+			is run, and those that do not cause an
+			error message, but the code doesn&rsquo;t
+			behave as expected. Each type has its own
+			strategies for debugging.
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>Error Messages</h2>
+
+		<p>
+			An error message has two key parts that
+			can help us identify the problem:
+		</p>
+
+		<ul>
+			<li>
+				<strong>Traceback</strong>: This tells
+				you the line number and function that
+				an error is found.</li>
+			<li>
+				<strong>TypeError</strong>: Explains
+				the nature of the error.
+			</li>
+		</ul>
+	</div>
+	
+	<div class="concept">
+		<h2>No Error Message</h2>
+
+		<p>
+			If there is no error message, but the code
+			is not doing what you want, it is a bit
+			trickier to debug. But there are things you
+			can try. One of the simplest ways to debug
+			these is to try placing print statements after
+			parts of a function. This lets you see what
+			they do on their own.</p>
+	</div>
+
+	<div class="concept">
+		<h2>Version Control</h2>
+
+		<p>
+			If you are trying to figure out a piece of
+			code, don&rsquo;t just delete buggy code.
+			It may be better than what you try next, and
+			it can be more frustrating to lose better
+			code. Instead, comment out code you are trying.
+			In Python, we do that by placing a hash (#)
+			at the beginning of the line. This keeps a
+			record of ideas. You can always delete old
+			code when you complete it. 
+		</p>
+
+		<p>
+			Professional programmers have more sophisticated
+			methods for version control (though they use
+			this method, too), for example GitHub. Keeping
+			older versions is extremely useful, because if
+			future changes break the code too much, you
+			can always go back to older code that you
+			have saved. 
+		</p>
+	</div>
+</div>
+
+
+<h1>Lesson 2.6: Structured Data: Lists &amp; For Loops</h1>
+<div class="lesson">
+
+	<div class="concept">
+		<h2>Strings vs. Lists</h2>
+
+		<p>
+			A string is simply a sequence of characters,
+			as we saw before. For instance:
+		</p>
+		
+		<p class="code">
+			vowel = "aeiou"<br/>
+			s[0]<br/>
+			'a'<br/>
+			s[2:4]<br/>
+			'io'
+		</p>
+
+		<p>
+			A <strong>list</strong> is a sequence, too,
+			but, unlike string, they can be made up of
+			anything. The basic syntax is:
+		</p>
+
+		<p class="code">
+			&lt;list&gt;&nbsp;&rarr;&nbsp; [&lt;Expression&gt;,
+			&lt;Expression&gt; ...]
+		</p>
+
+		<p>
+			To find a specific expression in a list, it
+			is similar to finding a specific character
+			in a string; however, the output is somewhat
+			different:
+		</p>
+
+		<p class="code">
+			vowel = ['a', 'e', 'i', 'o', 'u']<br/>
+			vowel[0]<br/>
+			'a'<br/>
+			vowel[2:4]<br/>
+			['i', 'o']
+		</p>
+
+		<p>
+			List elements can be strings, numbers, or
+			even lists inside of lists (nested lists):
+		</p>
+
+		<p class="code">
+			birthMonth = [['Noelle', 1], ['Angela', 6],<br/>
+			<span class="indent">['Randy', 10], ['Cheryl',
+				3]]</span>
+		</p>
+
+		<p>
+			To index within a nested list, the syntax is:
+		</p>
+
+		<p class="code">
+			print birthMonth[2][0]<br/>
+			'Randy'
+		</p>
+
+		<p>
+			Two features of lists allow for the creation
+			of more structured data: mutation and aliasing.
+		</p>
+
+		<h3>Mutation</h3>
+		
+		<p>
+			<strong>Mutation</strong> involves changing
+			an element of a list.
+		</p>
+		
+		<p class ="code">
+			vowel = ['a', 'e', 'i', 'o', 'o']<br/>
+			vowel[4] = 'u'<br/>
+			print vowel<br/>
+			['a', 'e', 'i', 'o', 'u']
+		</p>
+
+		<h3>Aliasing</h3>
+
+		<p>
+			<strong>Aliasing</strong> is a way of setting
+			up variables to refer to the same object. So,
+			for instance:
+		</p>
+
+		<p class="code">
+			q = vowel<br/>
+			q[1]
+			'e'
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>List Operations</h2>
+
+		<p>
+			There are several operations that can be
+			performed on lists:
+		</p>
+
+		<h3>Append</h3>
+
+		<p>
+			This adds an expression to the end of the
+			list.
+		</p>
+
+		<p class="code">
+			vowel.append("y")<br/>
+			print vowel<br/>
+			['a', 'e', 'i', 'o', 'u', 'y']<br/>
+		</p>
+
+		<h3>Plus</h3>
+
+		<p>
+			This adds the contents of lists together:
+		</p>
+
+		<p class="code">
+			[0,1] + [2,3]<br/>
+			[0, 1, 2, 3]
+		</p>
+
+		<p>
+			Append and plus differ in how they behave.
+			If you append a list to another list, it will
+			treat the appended list as its own entity;
+			i.e., it will be a nested list inside a list.
+			But adding two lists together essentially
+			concatenates the list. For example:
+		</p>
+
+		<p class="code">
+			a = [1, 2, 3, 4]<br/>
+			b = [5, 6, 7, 8]<br/>
+			c = [9, 0]<br/>
+			d = a + b + c<br/>
+			print d<br/>
+			[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+		</p>
+
+		<p>
+			However, if I use append instead:
+		</p>
+
+		<p class="code">
+			a.append(b)<br/>
+			print a<br/>
+			[1, 2, 3, 4, [5, 6, 7, 8]]
+		</p>
+	
+		<h3>Length (len)</h3>
+	
+		<p>
+			The length operator returns the number of
+			items in a list.
+		</p>
+
+		<p class="code">
+			len([0,1])<br/>
+			2<br/>
+			len(['a', ['b', c]])<br/>
+			2
+		</p>
+
+		<p>
+			This can also be used on strings; e.g.:
+		</p>
+
+		<p class="code">
+			len("Brandon")<br/>
+			7
+		</p>
+
+		<h3>Index</h3>
+
+		<p class="code">
+			&lt;list&gt;.index(&lt;value&lt;)
+		</p>
+
+		<p>If the &lt;value&gt; is in the list, index
+			returns the first position where the value
+			is found. Otherwise, it produces an error.
+		</p>
+
+		<p class="code">
+			rainbow = ["red", "orange", "yellow", "green",
+			"blue", "indigo", "violet"]<br/>
+			print rainbow.index("red")<br/>
+			0<br/>
+			print rainbow.index("white")<br/>
+			ValueError: 'white' is not in list
+		</p>
+
+		<h3>In</h3>
+
+		<p class="code">
+			&lt;value&gt; in &lt;list&gt;
+		</p>
+
+		<p>
+			<strong>In</strong> returns <span class="code">True</span> if
+			value is in list, <span class="code">False</span>
+			if it is not.
+		</p>
+
+		<p class="code">
+			"red" in rainbow<br/>
+			True<br/>
+			"white" in rainbow<br/>
+			False
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>Loops on Lists</h2>
+
+		<p>
+			It&rsquo;s possible to use while loops on
+			lists, e.g.:
+		</p>
+
+		<p class="code">
+			def print_all_elements(p):<br/>
+			<span class="indent">while i &lt; len(p)</span><br/>
+			<span class="indent"><span class="indent">
+				print p[i]</span></span><br/>
+			<span class="indent"><span class="indent">i = i + 1</span></span><br/>
+		</p>
+
+		<p>
+			However, <strong>for loops</strong> make this
+			simpler. The syntax for a for loop is:
+		</p>
+
+		<p class="code">
+			for &lt;name&gt; in &lt;list&gt;:<br/>
+			<span class="indent">&lt;block&gt;</span>
+		</p>
+
+		<p>
+			So the while loop above could be rewritten
+			as:
+		</p>
+
+		<p class="code">
+			def print_all_elements(p):<br/>
+			<span class="indent">for e in p:</span><br/>
+			<span class="indent"><span class="indent">
+				print e</span></span>
+		</p>
+	</div>
+</div>
+
+
+<h1>Lesson 2.7: How to Solve Problems</h1>
+
+<div class="lesson">
+
+	<div class="concept">
+		<h2>Steps</h2>
+
+		<ol start="0">
+			<li>Don&rsquo;t Panic!</li>
+			<li>Determine the inputs</li>
+			<li>Determine the outputs</li>
+			<li>Work through examples by hand</li>
+			<li>Find the simple mechanical solution</li>
+			<li>Develop incrementally and <em>test</em>
+				as you go</li>
+		</ol>
+	</div>
+
+	<div class="concept">
+		<h2>Understand the Problem</h2>
+
+		<p>
+			Understanding the problem means determining
+			what both the inputs (1) and outputs (2) are,
+			as well as the relationship between the two.
+		</p>
+
+		<p class="indent">input &rarr; PROCEDURE &rarr;
+		output</p>
+
+		<p>
+			It&rsquo;s pretty hard to write a single
+			line of code if you don&rsquo;t know all
+			of the pieces involved. Worse, if you dive
+			in without a complete understanding, you are
+			more prone to introducing errors into your
+			code. So, take the time to sketch out the
+			problem and its components.
+		</p>
+	</div>
+
+	<div class="concept">
+		<h2>Work Through Examples</h2>
+		
+		<p>
+			Before you write a line of code, you have to 
+			determine how you as a human would solve a
+			problem. For example, to take a very simple
+			problem, if I were to write a program that
+			returned the average of a list of numbers,
+			I would first have to figure out the math
+			involved; namely, the sum of all numbers in
+			a set divided by the number of list items
+			(in other words, divided by the length of
+			the list).
+		</p>
+
+		<p>
+			For something this simple, this may seem
+			like a no-brainer, but working through a
+			problem first is essential when trying to
+			write code for a more complex problem. 
+			(For these more complex problems, sometimes
+			writing them in &ldquo;pseudocode&rdquo;
+			helps.) The idea is to break a problem down
+			into smaller bits, and therefore write your
+			code in smaller, easier to understand bits.
+			This not only makes the problem easier to
+			understand, it reduces the amount of time
+			spent debugging a program, as you are
+			continuously writing and testing, writing
+			and testing.
+		</p>
+	</div>
+</div>
+
 <h1 class="sources">Sources</h1>
 	<ul class="sources">
-		<li><a href="http://www.colourlovers.com/palette/940086/mystery_machine">Colour Lovers: &ldquo;Mystery Machine&rdquo; Palette</a></li>
-		<li><a href="https://developers.google.com/fonts/docs/getting_started">Google Fonts: Get Started (Font used: Shadows into Light)</a></li>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla CSS Reference</a></li>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">Mozilla HTML Reference</a>
-		<li><a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">Wikipedia section on Inheritance</a></li>
+		<li>
+			<a href="http://www.colourlovers.com/palette/940086/mystery_machine">
+				Colour Lovers: &ldquo;Mystery Machine&rdquo; Palette</a></li>
+		<li>
+			<a href="https://developers.google.com/fonts/docs/getting_started">
+				Google Fonts: Get Started (Font used: Shadows into Light)</a></li>
+		<li>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+				Mozilla CSS Reference</a></li>
+		<li>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">
+				Mozilla HTML Reference</a></li>
+		<li>
+			<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">
+				Wikipedia section on Inheritance</a></li>
 	</ul>
+
 </body>
 </html>
